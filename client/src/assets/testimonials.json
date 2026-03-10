@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Rahul Sharma",
+    "role": "Daily Commuter",
+    "review": "RideNow has completely changed the way I commute. The rides are fast, affordable, and drivers are very professional.",
+    "rating": 5,
+    "image": "https://randomuser.me/api/portraits/men/32.jpg"
+  },
+  {
+    "name": "Arjun Mehta",
+    "role": "Business Traveler",
+    "review": "Reliable rides and great drivers. The real-time tracking feature is extremely useful when traveling in new cities.",
+    "rating": 5,
+    "image": "https://randomuser.me/api/portraits/men/76.jpg"
+  },
+  {
+    "name": "Sneha Kapoor",
+    "role": "Working Professional",
+    "review": "RideNow offers affordable rides and quick pickups. Its my go-to option for daily office travel.",
+    "rating": 5,
+    "image": "https://randomuser.me/api/portraits/women/65.jpg"
+  },
+  {
+    "name": "Priya Patel",
+    "role": "College Student",
+    "review": "Booking rides is super easy and the drivers are always polite. I use RideNow almost every day for my college commute.",
+    "rating": 4,
+    "image": "https://randomuser.me/api/portraits/women/44.jpg"
+  },
+  {
+    "name": "Rohit Verma",
+    "role": "Frequent Traveler",
+    "review": "The airport pickup service is fantastic. The driver arrived on time and the ride was smooth and comfortable.",
+    "rating": 5,
+    "image": "https://randomuser.me/api/portraits/men/45.jpg"
+  },
+  {
+    "name": "Neha Singh",
+    "role": "Startup Founder",
+    "review": "RideNow makes business travel stress-free. I love the scheduled rides feature for my meetings.",
+    "rating": 5,
+    "image": "https://randomuser.me/api/portraits/women/68.jpg"
+  }
+]

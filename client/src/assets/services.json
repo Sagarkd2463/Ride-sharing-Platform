@@ -1,0 +1,47 @@
+[
+  {
+    "title": "City Rides",
+    "description": "Affordable rides anywhere in your city.",
+    "icon": "🚗"
+  },
+  {
+    "title": "Outstation",
+    "description": "Travel comfortably to any nearby cities.",
+    "icon": "🛣️"
+  },
+  {
+    "title": "Ride Sharing",
+    "description": "Share rides with others and save your money.",
+    "icon": "👥"
+  },
+  {
+    "title": "Airport Pickup",
+    "description": "Reliable rides to and from the airport anytime.",
+    "icon": "✈️"
+  },
+  {
+    "title": "Corporate Travel",
+    "description": "Dedicated rides for business professionals and teams.",
+    "icon": "💼"
+  },
+  {
+    "title": "Scheduled Rides",
+    "description": "Book your ride in advance for any future travel.",
+    "icon": "📅"
+  },
+  {
+    "title": "Luxury Rides",
+    "description": "Premium vehicles for a comfortable & luxurious experience.",
+    "icon": "🚘"
+  },
+  {
+    "title": "Driver On Demand",
+    "description": "Hire a professional driver for your own vehicle.",
+    "icon": "🧑‍✈️"
+  },
+  {
+    "title": "Parcel Delivery",
+    "description": "Send your packages quickly & securely with our trusted drivers.",
+    "icon": "📦"
+  }
+]
