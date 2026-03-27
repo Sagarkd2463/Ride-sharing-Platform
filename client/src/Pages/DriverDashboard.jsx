@@ -72,7 +72,7 @@ const DriverDashboard = () => {
           {/* New Requests Link */}
           <Link 
             to={isOnline ? "/ride-requests" : "#"} 
-            className={`group p-12 rounded-[2rem] text-center transition-all duration-500 border-2 ${
+            className={`group p-12 rounded-4xl text-center transition-all duration-500 border-2 ${
               isOnline 
               ? "bg-gray-900 border-gray-900 text-white shadow-2xl scale-[1.01]" 
               : "bg-gray-100 border-gray-200 text-gray-400 cursor-not-allowed"
@@ -87,7 +87,7 @@ const DriverDashboard = () => {
           {/* Trip History Link */}
           <Link 
             to="/driver-history" 
-            className="bg-white border-2 border-gray-900 p-12 rounded-[2rem] text-center hover:bg-gray-900 hover:text-white transition-all duration-300 group shadow-sm hover:shadow-xl"
+            className="bg-white border-2 border-gray-900 p-12 rounded-4xl text-center hover:bg-gray-900 hover:text-white transition-all duration-300 group shadow-sm hover:shadow-xl"
           >
             <h3 className="text-2xl font-bold mb-2 group-hover:text-white">Trip History</h3>
             <p className="text-gray-500 group-hover:text-gray-300 text-sm">Review your past performance and earnings</p>
