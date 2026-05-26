@@ -5,4 +5,10 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  optimizeDeps: {
+    include: [
+      "leaflet",
+      "react-leaflet",
+    ],
+  },
 })

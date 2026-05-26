@@ -4,6 +4,38 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const navigate = useNavigate();
 
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+    role: "rider",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    localStorage.setItem(
+      "user",
+      JSON.stringify({
+        email: formData.email,
+        role: formData.role,
+      }),
+    );
+
+    // Navigate based on role
+    if (formData.role === "driver") {
+      navigate("/driver-dashboard");
+    } else {
+      navigate("/rider-dashboard");
+    }
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-6">
       <div className="bg-white shadow-xl rounded-2xl p-10 w-full max-w-md">
@@ -13,17 +45,23 @@ const Login = () => {
           Login to your RideNow account
         </p>
 
-        <form className="space-y-5">
+        <form onSubmit={handleSubmit} className="space-y-5">
           <input
             type="email"
+            name="email"
             placeholder="Email Address"
+            value={formData.email}
+            onChange={handleChange}
             className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
             required
           />
 
           <input
             type="password"
+            name="password"
             placeholder="Password"
+            value={formData.password}
+            onChange={handleChange}
             className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
             required
           />
@@ -31,8 +69,13 @@ const Login = () => {
           <div>
             <label className="block text-sm text-gray-600 mb-1">Login As</label>
 
-            <select className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black">
-              <option value="rider">Request a Ride</option>
+            <select
+              name="role"
+              value={formData.role}
+              onChange={handleChange}
+              className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+            >
+              <option value="rider">Rider</option>
               <option value="driver">Driver</option>
             </select>
           </div>
@@ -44,15 +87,6 @@ const Login = () => {
             Login
           </button>
         </form>
-
-        <div className="text-center text-gray-400 my-6">or</div>
-
-        <button
-          onClick={() => navigate("/")}
-          className="w-full border py-3 rounded-lg hover:bg-gray-100 transition"
-        >
-          Back to Home
-        </button>
       </div>
     </div>
   );
